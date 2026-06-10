@@ -14,6 +14,15 @@ export default function Navbar() {
             <li>
                 <Link href="/contact" className="hover:text-gray-400">Contact</Link>
             </li>   
+            <li>
+                <Link href="/login" className="hover:text-gray-400">login</Link>
+            </li>  
+            <li>
+                <Link href="/regiter" className="hover:text-gray-400">regiter</Link>
+            </li>  
+            <li>
+                <Link href="/forgot-password" className="hover:text-gray-400">forgot-password</Link>
+            </li>  
         </ul>
     </nav>
   );
