@@ -14,7 +14,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  background: #f1f5f9;
+  background: #ffd8e8;
 }
 
 .main-content {
@@ -22,7 +22,7 @@ body {
 }
 
 .navbar {
-  background: #0f172a;
+  background: #f767af;
   color: white;
   padding: 14px 24px;
 }
@@ -52,16 +52,18 @@ body {
 }
 
 .nav-links a {
-  color: white;
+  color: rgb(252, 252, 252);
   text-decoration: none;
 }
 
 .nav-links a:hover {
-  color: #38bdf8;
+  color: #35ffff;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .btn-register {
-  background: #2563eb;
+  background: #fd55ef;
   padding: 8px 14px;
   border-radius: 8px;
 }
@@ -137,10 +139,15 @@ body {
 }
 
 .footer {
-  background: #0f172a;
+  background: #f767af;
   color: white;
   text-align: center;
-  padding: 18px;
+  padding: 13px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
