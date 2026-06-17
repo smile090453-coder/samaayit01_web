@@ -14,7 +14,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  background: #ffd8e8;
+  background: #ebd6df;
 }
 
 .main-content {
@@ -22,7 +22,7 @@ body {
 }
 
 .navbar {
-  background: #f767af;
+  background: #ad6b8c;
   color: white;
   padding: 14px 24px;
 }
@@ -57,7 +57,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: #35ffff;
+  color: #3f1833;
   font-weight: bold;
   font-size: 18px;
 }
@@ -139,7 +139,7 @@ body {
 }
 
 .footer {
-  background: #f767af;
+  background: #ad6b8c;
   color: white;
   text-align: center;
   padding: 13px;
@@ -162,7 +162,7 @@ body {
     right: 20px;
     flex-direction: column;
     align-items: flex-start;
-    background: #1e293b;
+    background: #5c2d50;
     padding: 18px;
     width: 230px;
     border-radius: 12px;
