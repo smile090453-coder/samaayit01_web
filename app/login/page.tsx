@@ -12,7 +12,7 @@ export default function About() {
         placeholder="Password"
         type="password"
       />
-      <button>Register</button>
+      <button>login</button>
       </form>
     </div>
   );
