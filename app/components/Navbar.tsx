@@ -10,7 +10,7 @@ export default function Navbar() {
             <div className="nav-container">
 
                 <Link href="/" className="logo">
-                    ROBOT SHOP
+                    P'REN67 SHOP
                 </Link>
 
                 <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
@@ -32,7 +32,7 @@ export default function Navbar() {
                         <Link href="/login">login</Link>
                     </li>
                     <li>
-                        <Link href="/regiter">regiter</Link>
+                        <Link href="/regiter">register</Link>
                     </li>
                     <li>
                         <Link href="/forgot-password">forgot-password</Link>

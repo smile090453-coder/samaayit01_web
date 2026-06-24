@@ -1,8 +1,8 @@
 export default function About() {
   return (
     <div >
-      <h2>เกี่ยวกับฉัน</h2>
-        <p>โดย ภัทณุภา แสงแก้ว</p>  
+      <h2>About me</h2>
+        <p>by ลาบซอยสี่</p>  
     </div>
   );
 }
