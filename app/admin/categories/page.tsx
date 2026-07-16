@@ -1,4 +1,4 @@
-import CaregoryForm from "@/app/components/CaregoryForm";
+import CaregoryForm from "@/components/CaregoryForm";
 
 
 export default function CaregoryPage() {

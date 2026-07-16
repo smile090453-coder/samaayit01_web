@@ -1,4 +1,4 @@
-export default function ProductForm() {
+export default function ProductsForm() {
     return (
         <div>
             <h1>หมวดหมู่สินค้า</h1>
