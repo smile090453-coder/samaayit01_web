@@ -1,10 +1,9 @@
-import ProductsForm from "@/components/ProductForm";
+import ProductForm from "@/components/ProductForm";
 
-
-export default function ProductForm() {
+export default function ProductPage() {
     return (
         <div>
-            <ProductForm/>
+            <ProductForm />
         </div>
     );
 }
