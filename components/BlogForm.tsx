@@ -2,10 +2,10 @@
 
 import { FormEvent, useState } from "react";
 
-export default function CategoryForm() {
-    const [name, setName] = useState("");
+export default function BlogForm() {
+    const [title, setTitle] = useState("");
     const [slug, setSlug] = useState("");
-    const [description, setDescription] = useState("");
+    const [content, setContent] = useState("");
     const [message, setMessage] = useState("");
     const [submitting, setSubmitting] = useState(false);
 
@@ -17,8 +17,8 @@ export default function CategoryForm() {
             .replace(/[^a-z0-9ก-๙-]/g, "");
     }
 
-    function handleNameChange(value: string) {
-        setName(value);
+    function handleTitleChange(value: string) {
+        setTitle(value);
         setSlug(createSlug(value));
     }
 
@@ -35,22 +35,22 @@ export default function CategoryForm() {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify({
-                    name,
+                    title,
                     slug,
-                    description,
+                    content,
                 }),
             });
 
             const data = await response.json();
 
             if (!response.ok) {
-                throw new Error(data.message ?? "เพิ่มหมวดหมู่ไม่สำเร็จ");
+                throw new Error(data.message ?? "เพิ่มข้อมูลไม่สำเร็จ");
             }
 
-            setMessage("เพิ่มหมวดหมู่สำเร็จ");
-            setName("");
+            setMessage("เพิ่มข้อมูลสำเร็จ");
+            setTitle("");
             setSlug("");
-            setDescription("");
+            setContent("");
         } catch (error) {
             setMessage(
                 error instanceof Error
@@ -66,7 +66,7 @@ export default function CategoryForm() {
     return (
         <div className="page">
             <div className="card">
-                <h1> เพิ่มหมวดหมู่</h1>
+                <h1> เพิ่มบทความ</h1>
                 {message && (
                     <p>
                         {message}
@@ -74,12 +74,12 @@ export default function CategoryForm() {
                 )}
 
                 <form onSubmit={handleSubmit}>
-                    <label>ชื่อหมวดหมู่</label>
+                    <label>ชื่อหัวข้อ</label>
                     <input
                         type="text"
-                        value={name}
+                        value={title}
                         onChange={(event) =>
-                            handleNameChange(event.target.value)
+                            handleTitleChange(event.target.value)
                         }
                         required
                     />
@@ -94,20 +94,20 @@ export default function CategoryForm() {
                         required
                     />
 
-                    <label> รายละเอียด </label>
+                    <label> เนื้อหา </label>
                     <textarea
-                        value={description}
+                        value={content}
                         onChange={(event) =>
-                            setDescription(event.target.value)
+                            setContent(event.target.value)
                         }
-                        placeholder="กรอกรายละเอียด"
+                        placeholder="กรอกเนื้อหา"
                     />
 
                     <button
                         type="submit"
                         disabled={submitting}
                     >
-                        {submitting ? "กำลังบันทึก..." : "เพิ่มหมวดหมู่"}
+                        {submitting ? "กำลังบันทึก..." : "เพิ่มข้อมูล"}
                     </button>
                 </form>
             </div>
