@@ -59,6 +59,9 @@ export default function Navbar() {
                     <li>
                         <Link href="/contact">Contact</Link>
                     </li>
+                    <li>
+                        <Link href="/blogs">Blogs</Link>
+                    </li>
 
                     {user && (
                         <li>
@@ -69,7 +72,7 @@ export default function Navbar() {
                     {user?.role === "admin" && (
                         <>
                         <li>
-                            <Link href="/admin/BlogForm">Admin</Link>
+                            <Link href="/admin/Blogs">Blog</Link>
                         </li>
 
                         <li>

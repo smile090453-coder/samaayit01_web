@@ -29,7 +29,7 @@ export default function BlogForm() {
             setSubmitting(true);
             setMessage("");
 
-            const response = await fetch("/api/categories", {
+            const response = await fetch("/api/blogs", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
