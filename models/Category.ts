@@ -1,7 +1,6 @@
 import mongoose, { Model, Schema } from "mongoose";
 
 export interface ICategory {
-    
   name: string;
   slug: string;
   description?: string;

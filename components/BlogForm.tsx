@@ -66,7 +66,7 @@ export default function BlogForm() {
     return (
         <div className="page">
             <div className="card">
-                <h1> เพิ่มบทความ</h1>
+                <h1> เพิ่มบทความ </h1>
                 {message && (
                     <p>
                         {message}
@@ -74,7 +74,7 @@ export default function BlogForm() {
                 )}
 
                 <form onSubmit={handleSubmit}>
-                    <label>ชื่อหัวข้อ</label>
+                    <label>หัวข้อเรื่อง</label>
                     <input
                         type="text"
                         value={title}

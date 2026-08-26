@@ -35,13 +35,12 @@ export default function Navbar() {
         router.refresh();
     }
 
-
     return (
         <nav className="navbar">
             <div className="nav-container">
 
                 <Link href="/" className="logo">
-                    smile67
+                    Smile 67
                 </Link>
 
                 <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
@@ -52,7 +51,6 @@ export default function Navbar() {
                     <li>
                         <Link href="/" >Home</Link>
                     </li>
-
                     <li>
                         <Link href="/about">About</Link>
                     </li>
@@ -60,7 +58,7 @@ export default function Navbar() {
                         <Link href="/contact">Contact</Link>
                     </li>
                     <li>
-                        <Link href="/blogs">Blogs</Link>
+                        <Link href="/blogs">บทความ</Link>
                     </li>
 
                     {user && (
@@ -71,17 +69,15 @@ export default function Navbar() {
 
                     {user?.role === "admin" && (
                         <>
-                        <li>
-                            <Link href="/admin/Blogs">Blog</Link>
-                        </li>
-
-                        <li>
-                            <Link href="/admin/categories">Categoty</Link>
-                        </li>
-                        <li>
-                            <Link href="/admin/products">Product</Link>
-                        </li>
-
+                            <li>
+                                <Link href="/admin/blogs">เพิ่มบทความ</Link>
+                            </li>
+                            <li>
+                                <Link href="/admin/categories">Category</Link>
+                            </li>
+                            <li>
+                                <Link href="/admin/products">Product</Link>
+                            </li>
                         </>
                     )}
 
@@ -97,10 +93,10 @@ export default function Navbar() {
                     ) : (
                         <>
                             <li>
-                               <Link href="/profile"> {user.name} ({user.role}) </Link> 
+                                <Link href="/profile"> {user.name} ({user.role}) </Link>
                             </li>
                             <li>
-                                <button onClick={logout}  className="btn-logout">
+                                <button onClick={logout} className="btn-logout">
                                     Logout
                                 </button>
                             </li>
