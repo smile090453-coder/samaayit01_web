@@ -14,7 +14,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  background: #d4cfd4;
+  background: #f1f5f9;
 }
 
 .main-content {
@@ -22,7 +22,7 @@ body {
 }
 
 .navbar {
-  background: #6d034d;
+  background: #b40063;
   color: white;
   padding: 14px 24px;
 }
@@ -60,7 +60,7 @@ body {
   color: #000000;
   font-weight: bold;
   font-size: 18px;
-  background: #916a85;
+  background: #ffc0ea;
   padding: 14px 18px;
   border-radius: 8px;
 }
@@ -140,7 +140,7 @@ body {
 
 
 .footer {
-  background: #6d034d;
+  background: #b40063;
   color: white;
   text-align: left;
   padding: 18px;
@@ -190,7 +190,7 @@ body {
 }
 
 .card {
-  width: 360px;
+  width: 560px;
   background: white;
   padding: 28px;
   border-radius: 14px;
@@ -227,7 +227,7 @@ body {
   text-decoration: none;
 }
 
-.card textarea{
+.card textarea {
   width: 100%;
 }
 
